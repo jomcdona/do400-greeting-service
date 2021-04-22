@@ -25,7 +25,7 @@ pipeline{
         stage("Deploy"){
             steps{
                 sh '''
-                    oc project jomcdona-greetings
+                    oc project jomcdona-deployment-strategies
                     oc start-build greeting-service --follow --wait
                 '''
             }
