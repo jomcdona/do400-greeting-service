@@ -15,12 +15,6 @@ pipeline{
             }
         }
 
-        stage("Test"){
-            steps{
-                sh "npm test"
-            }
-        }
-
         // Add the "Deploy" stage here
         stage("Deploy"){
             steps{
